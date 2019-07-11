@@ -6,7 +6,8 @@
  * @package fathers_app
  * @since fathers_app 1.0
  */
-
+wp_enqueue_style( 'home-style', get_template_directory_uri() . "/assets/css/home.css", array('fathers_app-style') );
+wp_enqueue_style( 'home-style-responsive', get_template_directory_uri() . "/assets/css/home-responsive.css", array('fathers_app-style') );
 get_header();
 
 ?>
@@ -31,7 +32,7 @@ get_header();
                     ?>
                 </div>
                 <div class="col-md-4">
-                    <?php get_sidebar() ?>
+                    <?php //get_sidebar() ?>
                     <div class="home-bullet">
                         <div class="bullet-icon"><img src="<?php bloginfo('template_url'); ?>/assets/img/fin-icon.png"></div>
                         <span class="bullet-text">Financial planning for the baby</span>
@@ -69,4 +70,4 @@ get_header();
 	
 
 <?php
-// get_footer();
+get_footer();

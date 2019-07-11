@@ -98,6 +98,7 @@ function fathers_app_content_width() {
 }
 add_action( 'after_setup_theme', 'fathers_app_content_width', 0 );
 
+
 /**
  * Register widget area.
  *
@@ -135,7 +136,7 @@ function fathers_app_scripts() {
 	wp_enqueue_style( 'fontawesome', "https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
 	wp_enqueue_script( 'bootstrapJS', "//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", array("jquery"));
-	wp_enqueue_style( 'fathers_app-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'fathers_app-style', get_stylesheet_uri() , array("bootstrap"));
 	wp_enqueue_script( 'fathers_app-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'fathers_app-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
