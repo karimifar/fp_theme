@@ -26,12 +26,12 @@ a:hover{
     /* display: block; */
     z-index: 10;
     width: 100%;
-    padding-right: 5%;
+    padding: 10px 10%;
 }
 
 #nav-icon{
     width: 200px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
 
