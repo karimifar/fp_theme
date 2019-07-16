@@ -5,31 +5,80 @@
  *
  * @package fathers_app
  */
+wp_enqueue_style( 'page-banner-style', get_template_directory_uri() . "/assets/css/page-banner.css", array('fathers_app-style') );
+wp_enqueue_style( 'page-banner-responsive', get_template_directory_uri() . "/assets/css/page-banner-responsive.css", array('fathers_app-style') );
 
 get_header();
 ?>
+<?php 
+	$banner = get_field('banner_image');
+	$highlight_intro = get_field('intro');
+	if ( have_posts() ) : the_post();
+?>
+<div class="banner">
+	<img src="<?php echo $banner['url']?>">
+	<div class="overlay"></div>
+</div>
 
-	<div id="primary" class="container">
-		<main id="main" class="site-main">
-        <h1><?php the_title()?></h1>
-		<?php
-        while ( have_posts() ) :
-            
-			the_post(); ?>
-            <p> <?php the_content() ?> </p>
-			<!-- // get_template_part( 'template-parts/content', 'page' ); -->
+<div class="container about-container">
+	<h1 class="page-title"><?php the_title(); ?></h1>
+	<div id="about-row" class="row">
+		<div class="col-md-8 text-col">
 
-			<!-- // If comments are open or we have at least one comment, load up the comment template. -->
-			<?php if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<?php the_content() ?>
 
-		endwhile; // End of the loop.
+			<div class="thankful">
+				<p>
+					<?php echo $highlight_intro ?>                   
+				</p>
+				<div class="sponsors d-flex">
+					<?php if(have_rows('items')): 
+						while(have_rows('items')): the_row();
+					?>
+					<p><?php echo get_sub_field('item')?></p>
+					<?php endwhile; endif; ?>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+		<div class="col-md-4 team-col">
+			<h2>THE TEAM</h2>
+
+		<?php if( have_rows('team') ):
+			while(have_rows('team')): the_row();
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+
+			<h3><?php echo get_sub_field('team-title')?></h3>
+			<ul>
+				<?php if(have_rows('member_name')): 
+					while(have_rows('member_name')): the_row();
+				?>
+				<li><?php echo get_sub_field('name')?> </li>
+				<?php endwhile; endif; ?>
+			</ul>
+			
+		
+		
+		<?php 
+		endwhile;
+		endif;
+	 	?>
+		</div>
+
+	</div>
+
+	<div class="row sponsor-row">
+									
+	</div>
+<?php endif?>
 
 <?php
+
 // get_sidebar();
 get_footer();
+
+?>

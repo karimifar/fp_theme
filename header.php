@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <div class="wrapper">
 	<nav class="navbar navbar-expand-lg navbar-inverse bg-inverse">
-		<a id="nav-icon" class="navbar-brand" href="#">
+		<a id="nav-icon" class="navbar-brand" href="/">
 			<img src="<?php bloginfo('template_url'); ?>/assets/img/icon-alignedFill.svg" class="d-inline-block align-top" alt="">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,5 +43,3 @@
 			</ul>
 		</div>
 	</nav>
-
-	<div id="content" class="site-content">

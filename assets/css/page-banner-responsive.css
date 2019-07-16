@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1400px) {
+ .banner, .banner img, .overlay{
+   height: 400px;
+ }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+  }
+
+
+
+
+  @media only screen and (max-width: 768px) {
+      .team-col{
+          margin-top:30px;
+          padding: 15px;
+      }
+      .text-col{
+        padding: 15px;
+      }
+
+      .sponsors p {
+        font-size: 14px;
+    }
+
+  }
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    .sponsors p {
+        font-size: 12px;
+    }
+
+  }

@@ -14,49 +14,57 @@ get_header();
 
 
 
-<div id="trapezoid"></div>
+        <div id="trapezoid"></div>
 
         <div class="container home-container">
             <div id="home-row" class="row">
                 <!-- <img src="./assets/img/icon.svg"> -->
                 <!-- <h1>Fathers Playbook App</h1> -->
                 <div class="col-md-8 intro-col">
-                    <h1>Father's Playbook</h1>
+                    
                     <?php
                     while ( have_posts() ) :
                         
                         the_post();
+                    ?>
+                        <h1><?php the_title() ?></h1>
+                    <?php
                         the_content();
 
                     endwhile; // End of the loop.
                     ?>
                 </div>
                 <div class="col-md-4">
-                    <?php //get_sidebar() ?>
-                    <div class="home-bullet">
-                        <div class="bullet-icon"><img src="<?php bloginfo('template_url'); ?>/assets/img/fin-icon.png"></div>
-                        <span class="bullet-text">Financial planning for the baby</span>
-                    </div>
-                    <div class="home-bullet">
-                        <div class="bullet-icon"><img src="<?php bloginfo('template_url'); ?>/assets/img/help-icon.png"></div>
-                        <span class="bullet-text">Help with understanding what your partner is going through</span>
-                    </div>
-                    <div class="home-bullet">
-                        <div class="bullet-icon"><img src="<?php bloginfo('template_url'); ?>/assets/img/pregnancy-icon.png"></div>
-                        <span class="bullet-text">Info on how to support her during the pregnancy</span>
-                    </div>
-                    <div class="home-bullet">
-                        <div class="bullet-icon"><img src="<?php bloginfo('template_url'); ?>/assets/img/heart-icon.png"></div>
-                        <span class="bullet-text">Tips on taking care of yourself</span>
-                    </div>
-                    <div class="home-bullet">
-                        <div class="bullet-icon"><img src="<?php bloginfo('template_url'); ?>/assets/img/edu-icon.png"></div>
-                        <span class="bullet-text">Help with understanding medical terms</span>
-                    </div>
+
+                    <?php
+
+                        // check if the repeater field has rows of data
+                        if( have_rows('home_bullets') ):
+
+                            // loop through the rows of data
+                            while ( have_rows('home_bullets') ) : the_row();
+          
+                                $icon = get_sub_field('icon');
+                                $content = get_sub_field('bullet-text');
+                    ?>
+                                <div class="home-bullet">
+                                    <?php if($icon):?>
+                                        <div class="bullet-icon"><img src="<?php echo $icon['url'] ?>"></div>
+                                    <?php endif ?>
+                                    <span class="bullet-text"><?php echo $content ?></span>
+                                </div>
+                        
+                            <?php  endwhile;
+
+                        else : 
+                        
+                        endif;
+
+                    ?>
 
                 </div>
                 
-            </div>
+            </div> <!-- home-row -->
 
             <div class="row justify-content-center dl-row">
                 <div class="text-center">
@@ -65,8 +73,8 @@ get_header();
                 </div>
             </div>
 
-        </div>
-	</div>
+        </div> <!-- container -->
+	</div> <!-- wrapper (from header.php) -->
 	
 
 <?php
