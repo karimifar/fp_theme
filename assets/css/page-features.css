@@ -1,0 +1,25 @@
+.feat-row{
+    background-color: #fbc02d;
+    width:100%;
+}
+
+.row{
+    margin:0;
+}
+
+.feat-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.feat-img img{
+    max-width: 100%;
+}
+
+.btm-trap{
+    border-top: 50px solid red;
+    border-left: 10px solid transparent;
+    height: 0;
+    width: 100%;
+}
