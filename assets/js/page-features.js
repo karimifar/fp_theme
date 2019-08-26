@@ -1,4 +1,16 @@
-console.log("hi")
+$(document).ready(function(){
 
-var btmTrap = $(".btm-trap");
-btmTrap.css("border-left", btmTrap + " solid transparent")
+    function adjustBorder(){
+        var pageW = document.body.offsetWidth;
+
+        var triangle = $(".triangle");
+        triangle.css("border-left", pageW + "px solid transparent")
+    }
+
+    $(window).on("resize", function(){
+        adjustBorder();
+    });
+
+    adjustBorder();
+
+})

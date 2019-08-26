@@ -1,6 +1,11 @@
 .feat-row{
-    background-color: #fbc02d;
     width:100%;
+}
+.feat-row-y{
+    background-color: #fbc02d;
+}
+.feat-row-w{
+    background-color: #ffffff;
 }
 
 .row{
@@ -17,9 +22,16 @@
     max-width: 100%;
 }
 
-.btm-trap{
-    border-top: 50px solid red;
-    border-left: 10px solid transparent;
+.triangle{
+    border-left: 1000px solid transparent;
     height: 0;
     width: 100%;
+}
+.triangle-b{
+    border-top: 70px solid #fbc02d;
+}
+
+.triangle-t{
+    border-bottom: 70px solid #fbc02d;
+
 }
