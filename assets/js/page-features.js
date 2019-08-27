@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     function adjustBorder(){
         var pageW = document.body.offsetWidth;
 

@@ -1,13 +1,26 @@
 .feat-row{
     width:100%;
+    padding: -150px 0;
+}
+
+.feat-row h1{
+    margin-bottom: 24px;
+    line-height: 1.1em;
+}
+.feat-row p{
+    font-weight: 300;
+    margin-bottom: 8px;
+    /* margin-top: 20px; */
 }
 .feat-row-y{
-    background-color: #fbc02d;
+    background-color: #fbc02dcc;
 }
 .feat-row-w{
     background-color: #ffffff;
 }
-
+.feat-row-y h1{
+    color: #fff;
+}
 .row{
     margin:0;
 }
@@ -28,10 +41,10 @@
     width: 100%;
 }
 .triangle-b{
-    border-top: 70px solid #fbc02d;
+    border-top: 100px solid #fbc02dcc;
 }
 
 .triangle-t{
-    border-bottom: 70px solid #fbc02d;
+    border-bottom: 100px solid #fbc02dcc;
 
 }
