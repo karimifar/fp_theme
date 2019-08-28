@@ -73,9 +73,9 @@ get_header();
                 </div>
             </div>
 
-        </div> <!-- container -->
-	</div> <!-- wrapper (from header.php) -->
+        
 	
 
 <?php
 get_footer();
+?>

@@ -13,7 +13,17 @@
 
 
 
-<?php wp_footer(); ?>
+
 
 </body>
+
+<?php if (is_page_template('page-home.php')): ?>
 </html>
+<?php else : ?>
+<footer>
+    <div>
+        
+    </div>
+</footer>
+<?php endif ?>
+<?php wp_footer(); ?>
