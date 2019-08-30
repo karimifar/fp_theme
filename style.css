@@ -38,8 +38,38 @@ a:hover{
 }
 
 footer{
-    height: 240px;
+    /* height: 240px; */
     width: 100%;
-    background: #4e342e11;
+    background: #4e342e22;
+    padding: 60px 10px;
+    border-top: 2px solid #4e342e33;
+    margin-top: 40px;
 }
 
+footer .logos a{
+    display: inline-block;
+    max-width: 30%;
+    padding: 10px;
+    opacity: 0.6;
+}
+footer .g-play img{
+    max-width: 240px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+footer .g-play img:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+footer .logos img{
+    max-width: 120px;
+}
+footer p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+footer .logos a:hover{
+    opacity: 0.8;
+}
