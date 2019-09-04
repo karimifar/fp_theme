@@ -46,13 +46,16 @@ get_header();
           
                                 $icon = get_sub_field('icon');
                                 $content = get_sub_field('bullet-text');
+                                $link = get_sub_field('bullet_id');
                     ?>
+                                <a href = <?php echo "/features#".$link?>>
                                 <div class="home-bullet">
                                     <?php if($icon):?>
                                         <div class="bullet-icon"><img src="<?php echo $icon['url'] ?>"></div>
                                     <?php endif ?>
                                     <span class="bullet-text"><?php echo $content ?></span>
                                 </div>
+                                </a>
                         
                             <?php  endwhile;
 
@@ -77,5 +80,7 @@ get_header();
 	
 
 <?php
+wp_enqueue_script( 'page-features', get_template_directory_uri() . "/assets/js/page-home.js", array("jquery"));
+
 get_footer();
 ?>

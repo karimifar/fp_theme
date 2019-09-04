@@ -41,14 +41,16 @@
     margin: -100px 0;
 }
 
-.feat-row:last-of-type{
-    display: none;
+.feat-row:last-of-type .feat-img{
+    margin: -50px 0;
+    margin-bottom: 80px;
 }
 
 .triangle{
     border-left: 1000px solid transparent;
     height: 0;
     width: 100%;
+    transition: all 0.1s ease-in-out;
 }
 .triangle-b{
     border-top: 150px solid #fbc02dcc;

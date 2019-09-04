@@ -20,7 +20,7 @@ $rowIndex = get_row_index();
 
 	<?php if($rowIndex % 2 ===0):?>
 		
-		<div class="feat-row-w feat-row">
+		<div id=<?php echo get_sub_field('id')?> class="feat-row-w feat-row">
 			<div class= "container">
 				<div class="row">
 					
@@ -38,7 +38,7 @@ $rowIndex = get_row_index();
 	<?php else:?>
 
 		<?php if($rowIndex !== 1):?><div class="triangle triangle-t"></div><?php endif ?>
-		<div class="feat-row-y feat-row">
+		<div id=<?php echo get_sub_field('id')?> class="feat-row-y feat-row">
 			<div class= "container">
 				<div class="row">
 					<div class="col-md-5 feat-col feat-img">

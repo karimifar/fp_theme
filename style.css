@@ -1,6 +1,7 @@
 /* Styles for all */
 html{
     margin-top: 0 !important;
+    scroll-behavior: smooth;
 }
 *{
     font-family: "museo-sans", sans-serif;
@@ -35,6 +36,7 @@ a:hover{
 }
 .navbar-nav li{
     padding: 0 10px;
+    text-align: right;
 }
 
 footer{
@@ -45,10 +47,12 @@ footer{
     border-top: 2px solid #4e342e33;
     margin-top: 40px;
 }
-
+footer .logos{
+    display: flex;
+    flex-wrap: wrap;
+}
 footer .logos a{
-    display: inline-block;
-    max-width: 30%;
+    max-width: 140px;
     padding: 10px;
     opacity: 0.6;
 }
@@ -63,7 +67,8 @@ footer .g-play img:hover{
     filter: grayscale(0%);
 }
 footer .logos img{
-    max-width: 120px;
+    max-width: 100%;
+
 }
 footer p{
     font-size: 12px;
@@ -72,4 +77,13 @@ footer p{
 
 footer .logos a:hover{
     opacity: 0.8;
+}
+
+
+
+
+
+
+.not-found{
+    margin-top: 100px;
 }
