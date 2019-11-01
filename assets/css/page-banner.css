@@ -100,7 +100,7 @@ h1.page-title{
     margin-right: 10px;
 }
 
-.link-row p{
+.link-row .link-text{
     font-size: 24px;
     margin: 0;
     text-align: center;
@@ -115,4 +115,13 @@ h1.page-title{
 }
 .link-row:hover{
     background-color: #fbc02d;
+}
+
+.link-row.inactive:hover{
+    background-color: #4e342e33;
+    text-decoration: none;
+}
+.inactive-text{
+    text-align: center;
+    font-weight: 100;
 }

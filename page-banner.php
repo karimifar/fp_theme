@@ -75,16 +75,20 @@ get_header();
 		<?php endif ?>
 
 		<?php if( have_rows('side_links') ): ?>
-			<div class="col-md-4 team-col">
+			<div class="col-md-4 team-col" >
 				<?php 
 					while(have_rows('side_links')): the_row();
 				?>
 
 				<a href= <?php echo get_sub_field("link_url")?> target="_blank">
-					<div class="link-row">
-						<p><span><?php echo get_sub_field("link_icon")?></span>  <?php echo get_sub_field("link_text")?> </p>
+					<div class="link-row <?php if( get_sub_field("disable")==1){echo "inactive";}?>">
+						<p class="link-text"><span><?php echo get_sub_field("link_icon")?></span>  <?php echo get_sub_field("link_text")?> </p>
+						
 					</div>
 				</a>
+				<?php if( get_sub_field("disable")==1): ?>
+					<p class="inactive-text">Coming soon!</p>
+				<?php endif?>
 				<?php endwhile; ?>
 			</div>
 		<?php endif ?>

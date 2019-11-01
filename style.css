@@ -55,6 +55,7 @@ footer .logos a{
     max-width: 140px;
     padding: 10px;
     opacity: 0.6;
+    cursor: auto ;
 }
 footer .g-play img{
     max-width: 240px;
