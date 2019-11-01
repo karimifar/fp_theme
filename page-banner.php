@@ -38,11 +38,21 @@ get_header();
 					<p><?php echo get_sub_field('item')?></p>
 					<?php endwhile; ?>
 				</div>
+				
 			</div>
 			<?php endif; ?>
+			<?php if ( get_field('wpform_shortcode') ): ?>
+			
+			<h2><br><br><hr>Report a bug you found in the app:</h2>
+			<?php
+				echo do_shortcode( get_field('wpform_shortcode') );
+			endif ?>
 
 		</div>
 		
+		
+
+
 		<?php if( have_rows('team') ): ?>
 			<div class="col-md-4 team-col">
 				<h2>THE TEAM</h2>
