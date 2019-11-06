@@ -26,10 +26,16 @@
 .navbar{
     position: absolute;
 }
-#g-play-link{
+.download-link{
     width:300px;
-    margin:auto;
-    display: block;
+    margin: 0 5px;
+}
+.download-link img{
+    width: 100%;
+}
+#app-store-link{
+    padding: 8px 0px;
+    width:250px;
 }
 #trapezoid {
     border-bottom: 100vh solid #fbc02d;
@@ -66,7 +72,7 @@
   .dl-row{
       margin-top: 50px;
   }
-  .dl-row p{
+  .text-center p{
       font-weight: 100;
   }
 

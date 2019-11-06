@@ -73,10 +73,22 @@
      .bullet-text{
          font-size: 14px;
      }
-     #g-play-link{
-        width:240px;
+    .download-link{
+        width:200px;
     }
-    .dl-row p{
-        font-size: 14px;
+    #app-store-link{
+        width:160px;
+    }
+    .dl-row {
+        margin-bottom: 60px;
     }
   }
+  @media only screen and (max-width: 400px) {
+    .download-link{
+        width:200px;
+    }
+    #app-store-link{
+        width:190px;
+    }
+  
+}
