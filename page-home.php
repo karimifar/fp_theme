@@ -71,9 +71,11 @@ get_header();
 
             <div class="text-center">
                 <div class="row justify-content-center dl-row">
-                    <a target="_blank" class="download-link" id="g-play-link" href='https://play.google.com/store/apps/details?id=com.sagalabs.fathersplaybook&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img  alt='Get it on Google Play' src='<?php bloginfo('template_url'); ?>/assets/img/google-play-badge.svg'/></a>
+                <p>Version 4.0 coming soon for Android and iOS</p>
 
-                    <a target="_blank"class="download-link" id="app-store-link" href='https://apps.apple.com/us/app/fathers-playbook/id1469334267'><img  alt='Get it on App Store' src='<?php bloginfo('template_url'); ?>/assets/img/app-store.svg'/></a>
+                    <!-- <a target="_blank" class="download-link" id="g-play-link" href='https://play.google.com/store/apps/details?id=com.sagalabs.fathersplaybook&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img  alt='Get it on Google Play' src='<?php bloginfo('template_url'); ?>/assets/img/google-play-badge.svg'/></a>
+
+                    <a target="_blank"class="download-link" id="app-store-link" href='https://apps.apple.com/us/app/fathers-playbook/id1469334267'><img  alt='Get it on App Store' src='<?php bloginfo('template_url'); ?>/assets/img/app-store.svg'/></a> -->
                     
                 </div>
                 <!-- <p>*Spanish/English bilingual versions coming soon!*</p> -->

@@ -57,19 +57,23 @@ footer .logos a{
     opacity: 0.6;
     cursor: auto ;
 }
-footer .g-play img{
+
+footer .dl-links img{
     max-width: 240px;
+    width: 100%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
-footer .g-play img:hover{
+footer .dl-links img:hover{
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
 footer .logos img{
     max-width: 100%;
-
+}
+#f-app-store-link{
+    padding: 7px;
 }
 footer p{
     font-size: 12px;

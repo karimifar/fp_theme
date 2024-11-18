@@ -31,9 +31,11 @@
                     <a href=""><img src="<?php bloginfo('template_url'); ?>/assets/img/ut-austin.png" alt=""></a>
                 </div>
             </div>
-            <div class="col-md-4 g-play">
-                <a href="https://play.google.com/store/apps/details?id=com.sagalabs.fathersplaybook&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="<?php bloginfo('template_url'); ?>/assets/img/google-play-badge.svg" alt=""></a>
-                
+            <div class="col-md-4 dl-links">
+            <p>Version 4.0 coming soon for Android and iOS</p>
+                <!-- <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sagalabs.fathersplaybook&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="<?php bloginfo('template_url'); ?>/assets/img/google-play-badge.svg" alt=""></a>
+                <a target="_blank" class="download-link"  href='https://apps.apple.com/us/app/fathers-playbook/id1469334267'><img  id="f-app-store-link" alt='Get it on App Store' src='<?php bloginfo('template_url'); ?>/assets/img/app-store.svg'/></a> -->
+
             </div>
         </div>
     </div>
